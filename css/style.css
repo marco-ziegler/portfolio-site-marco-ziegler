@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -26,7 +30,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.8em;
+  font-size: 2.8rem;
 }
 
 h4 {
@@ -36,6 +40,95 @@ h4 {
 /* Images  */
 img {
   width: 100%;
+}
+
+/* Layout Styling */
+main {
+  padding-top: 15rem;
+}
+
+header {
+  background-color: #FFFFFF;
+  text-align: left;
+  padding-top: 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  padding: 0 3rem;
+}
+
+footer {
+  margin-top: 8rem;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 1.5rem 0 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #434343 !important;
+}
+
+.logo {
+  color: #434343 !important;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.project-summary {
+  padding: 3rem 3rem 3rem 3rem;
+}
+
+.row {
+  background-color: #FFFFFF;
+  box-shadow: 0 0.5rem 1.5rem 0 rgb(0 0 0 / 25%);
+  margin: 2.5rem 0;
+}
+
+.number {
+  color: white;
+  background-color: #434343;
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem !important;
+  border-radius: 10rem;
+}
+
+#skills-tools, #my-story, #introduction, #conclusion {
+  margin-top: 8rem;
+}
+
+#hero {
+  background-color: #FFFFFF;
+  padding: 4rem 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#work {
+  margin-top: 4rem;
 }
 
 /* Hyperlinks  */
@@ -62,12 +155,12 @@ a:active {
 .button,
 .button:visited {
   display: inline-block;
-  background-color: #0085FF;
+  background-color: #434343;
   color: #FFFFFF !important;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none !important;
-  padding: 12px 32px 12px 32px;
+  padding: 1.2rem 3.2rem 1.2rem 3.2rem;
   transition-duration: 200ms;
   transition-timing-function: ease;
   transition-delay: 0s;
@@ -75,41 +168,32 @@ a:active {
 
 .button:hover,
 .button:focus {
-  transform: translate(0px, -2px);
-  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 25%);
+  transform: translate(0, -0.2rem);
+  box-shadow: 0 0.5rem 1.5rem 0 rgb(0 0 0 / 25%);
 }
 
 .button:active {
-  background-color: #0029BA;
-  transform: translate(0px, -2px);
-  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 25%);
+  background-color: #0085FF;
+  transform: translate(0, -0.2rem);
+  box-shadow: 0 0.5rem 1.5rem 0 rgb(0 0 0 / 25%);
 }
 
 .button-secondary {
   background-color: #FFFFFF;
-  color: #0085FF !important;
-  border-color: #0085FF;
+  color: #434343 !important;
+  border-color: #434343;
   border-style: solid;
   border-width: 0.25rem;
 }
 
 .button-secondary:active {
   background-color: #FFFFFF !important;
-  color: #0029BA !important;
-  border-color: #0029BA;
-}
-
-/* Project wrapper */
-.project-summary {
-  padding: 3vw 3vw 6vw 3vw;
-}
-
-.project-wrapper {
-  background-color: #FFFFFF;
-  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 25%);
+  color: #0085FF !important;
+  border-color: #0085FF;
 }
 
 /* Footer  */
 .social-media-icons {
-  width: 30px;
+  width: 3rem;
+  margin-top: 5rem;
 }

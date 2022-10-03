@@ -1,0 +1,115 @@
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #434343;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4.0rem;
+}
+
+h3 {
+  font-size: 2.8em;
+}
+
+h4 {
+  font-size: 2.0rem;
+}
+
+/* Images  */
+img {
+  width: 100%;
+}
+
+/* Hyperlinks  */
+a,
+a:visited {
+  color: #0085FF;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.25rem;
+  outline-color: #434343;
+}
+
+a:active {
+  color: #0029BA;
+}
+
+/* Buttons */
+.button,
+.button:visited {
+  display: inline-block;
+  background-color: #0085FF;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  padding: 12px 32px 12px 32px;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.button:hover,
+.button:focus {
+  transform: translate(0px, -2px);
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 25%);
+}
+
+.button:active {
+  background-color: #0029BA;
+  transform: translate(0px, -2px);
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 25%);
+}
+
+.button-secondary {
+  background-color: #FFFFFF;
+  color: #0085FF !important;
+  border-color: #0085FF;
+  border-style: solid;
+  border-width: 0.25rem;
+}
+
+.button-secondary:active {
+  background-color: #FFFFFF !important;
+  color: #0029BA !important;
+  border-color: #0029BA;
+}
+
+/* Project wrapper */
+.project-summary {
+  padding: 3vw 3vw 6vw 3vw;
+}
+
+.project-wrapper {
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 25%);
+}
+
+/* Footer  */
+.social-media-icons {
+  width: 30px;
+}

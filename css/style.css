@@ -14,6 +14,7 @@ html {
 
 /* Typography */
 body {
+  background-color: #FBFAF9;
   font-family: 'Work Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -51,10 +52,10 @@ p {
 /* Hyperlinks  */
 a,
 a:visited {
-  color: #FA5A00;
+  color: #A5A5A5;
   font-weight: 600;
   text-decoration: none;
-  transition: all 200ms ease;
+  transition: all 300ms ease;
   transition-property: color;
 }
 
@@ -68,7 +69,7 @@ a:focus {
 }
 
 a:active {
-  color: #BA4300;
+  color: #000000;
 }
 
 /* Buttons */
@@ -102,7 +103,7 @@ a:active {
 }
 
 .button:active {
-  background-color: #FA5A00;
+  background-color: #A5A5A5;
   transform: translate(0, -0.2rem);
   box-shadow: 0 0.5rem 1.5rem 0 rgb(0 0 0 / 25%);
 }
@@ -118,8 +119,8 @@ a:active {
 
 .button-secondary:active {
   background-color: transparent !important;
-  color: #BA4300 !important;
-  border-color: #BA4300;
+  color: #A5A5A5 !important;
+  border-color: #A5A5A5;
 }
 
 .button-disabled,
@@ -136,7 +137,7 @@ a:active {
 ul {
   margin: 0;
   padding-left: 2rem;
-padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 nav {
@@ -164,7 +165,7 @@ nav>ul>li>a:visited {
 
 nav>ul>li>a:hover,
 nav>ul>li>a:focus {
-  color: #FA5A00 !important;
+  color: #A5A5A5 !important;
   text-decoration: none;
 }
 
@@ -177,7 +178,7 @@ nav>ul>li>a:active {
 }
 
 .logo {
-  max-width: 28rem;
+  max-width: 20rem;
   margin: 0;
 }
 
@@ -189,13 +190,17 @@ section {
 /* Containers */
 .container {
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #work.container {
   padding-top: 6rem;
+}
+
+#project h2 {
+  margin: 4rem 0 4rem 0;
 }
 
 /* Rows */
@@ -225,9 +230,16 @@ section {
   margin: 0 auto;
 }
 
-
 #skills-section {
-  padding: 2rem 0 2rem 0;
+  padding: 4rem 0 4rem 0;
+}
+
+#project-content {
+  padding: 4rem 0 4rem 0;
+}
+
+#conclusion {
+  margin-bottom: 3rem;
 }
 
 /* Columns */
@@ -253,18 +265,25 @@ header {
 
 /* Main */
 .background {
-  background-color: #FBFAF9;
+  background-color: #F6F5F4;
 }
 
 main {
-  padding-top: 11.6rem;
-  padding-bottom: 8rem;
+  padding-top: 9.6rem;
+  padding-bottom: 0;
 }
 
-#hero {
-  display: inline-block;
-  width: 100%;
-  text-align: center
+.container-hero {
+  max-width: 1000px;
+  padding: 5rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+#work {
+  margin: 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 #hero h1 {
@@ -274,18 +293,18 @@ main {
   margin-top: 0;
 }
 
-#hero h1>span {
+#hero h1 {
   display: inline-block;
 }
 
-#hero h1>span .line-through {
+#hero h1 .line-through {
   text-decoration-line: line-through;
   text-decoration-thickness: 0.3rem;
   text-decoration-style: initial;
   text-decoration-color: #FA5A00;
 }
 
-#hero h1>span .wavy {
+#hero h1 .wavy {
   text-decoration: underline;
   text-decoration-thickness: 0.3rem;
   text-decoration-style: wavy;
@@ -331,10 +350,33 @@ main {
   margin-top: 2rem;
 }
 
+.container-image {
+  margin: 6rem 0 2rem 0;
+}
+
+.shadow-image {
+  box-shadow: 3px 5px 20px 3px rgb(0 0 0 / 15%);
+}
+
+.introduction span {
+  margin-right: 3rem;
+  font-weight: 600;
+}
+
+.introduction p {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #ececec;
+}
+
+#project h1 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 3.5rem;
+}
 
 /* Footer  */
 footer {
-  background-color: #F6F5F4;
+  background-color: #FFFFFF;
   padding-top: 8rem;
   padding-bottom: 1rem;
   text-align: center;
@@ -444,17 +486,22 @@ footer h2 {
     line-height: 0;
   }
 
+  .container-hero {
+    padding: 5rem;
+    margin: 20rem auto;
+  }
+
   #hero h1 {
-    font-size: 4.0rem;
+    font-size: 3.0rem;
   }
 
-  #hero h1>span .line-through {
+  #hero h1 .line-through {
     text-decoration-thickness: 0.4rem;
   }
 
-  #hero h1>span .wavy {
+  #hero h1 .wavy {
     text-decoration-thickness: 0.4rem;
-    text-underline-offset: 1.5rem;
+    text-underline-offset: 1.3rem;
   }
 
   .row {
@@ -492,7 +539,6 @@ footer h2 {
     justify-content: center;
     align-items: flex-start;
   }
-
 
   .row::after {
     content: "";
@@ -543,15 +589,14 @@ footer h2 {
   .profile-picture {
     max-width: 80%;
   }
+
+  #project h1 {
+    font-size: 4rem;
+  }
 }
 
 /* Media devices (1024px or larger) */
 @media only screen and (min-width: 1024px) {
-  #hero .container {
-    width: 70rem;
-    padding: 0 auto;
-  }
-
   .col-lg-5 {
     width: 41.7%;
     float: left;

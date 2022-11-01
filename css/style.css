@@ -22,7 +22,10 @@ body {
   color: #434343;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 600;
   text-transform: uppercase;
   margin: 0;
@@ -30,7 +33,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 4.0rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -38,7 +41,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.0rem;
+  font-size: 2rem;
 }
 
 h4 {
@@ -52,7 +55,7 @@ p {
 /* Hyperlinks  */
 a,
 a:visited {
-  color: #A5A5A5;
+  color: #434343;
   font-weight: 600;
   text-decoration: none;
   transition: all 300ms ease;
@@ -63,9 +66,9 @@ a:hover,
 a:focus {
   text-decoration: underline;
   text-decoration-thickness: 0.25rem;
-  text-decoration-style: wavy;
-  text-underline-offset: 0.25rem;
-  outline-color: #434343;
+  text-decoration-style: solid;
+  text-underline-offset: 0.3rem;
+  outline-color: #767676;
 }
 
 a:active {
@@ -84,12 +87,12 @@ a:active {
 .button,
 .button:visited {
   display: inline-block;
-  background-color: #434343;
+  background-color: #767676;
   color: #FFFFFF !important;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none !important;
-  padding: 1.2rem 3.2rem 1.2rem 3.2rem;
+  padding: 1.2rem 3.2rem;
   margin: 0;
   border-radius: 5px;
   transition: all 300ms ease;
@@ -146,10 +149,6 @@ nav>ul {
   margin: 0;
 }
 
-nav>ul>li {
-  display: ;
-}
-
 nav>ul>li>a,
 nav>ul>li>a:visited {
   text-transform: uppercase;
@@ -164,7 +163,7 @@ nav>ul>li>a:focus {
 }
 
 nav>ul>li>a:active {
-  color: #434343 !important;
+  color: #767676 !important;
   text-decoration: underline;
   text-decoration-style: wavy;
   text-underline-offset: 0.25rem;
@@ -177,38 +176,39 @@ nav>ul>li>a:active {
 
 .navtoggle.responsive li {
   display: block;
-  padding: 1.0rem 0;
+  padding: 1rem 0;
   border-top: 0.1rem solid #A5A5A5;
 }
 
 .navtoggle.responsive li:last-child {
-  padding: 0 0 1.0rem;
+  padding: 0 0 1rem;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
 .navtoggle.responsive nav {
-  padding: 2.0rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   top: -0.3rem;
-  font-size: 2.0rem;
+  font-size: 2rem;
   padding-right: 0;
 }
 
 .logo {
-  max-width: 15.0rem;
+  max-width: 15rem;
   margin: 0;
 }
 
 /* Sections */
 section {
-  margin: 3rem 0 0 0;
+  margin: 3rem 0 0;
 }
 
 /* Containers */
@@ -224,7 +224,7 @@ section {
 }
 
 #project h2 {
-  margin: 4rem 0 4rem 0;
+  margin: 4rem 0;
 }
 
 /* Rows */
@@ -255,11 +255,11 @@ section {
 }
 
 #skills-section {
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0;
 }
 
 #project-content {
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0;
 }
 
 #conclusion {
@@ -277,7 +277,7 @@ section {
 /* Header */
 header {
   background-color: #FFFFFF;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem;
   position: fixed;
   width: 100%;
 }
@@ -323,7 +323,6 @@ main {
 #hero h1 .line-through {
   text-decoration-line: line-through;
   text-decoration-thickness: 0.3rem;
-  text-decoration-style: initial;
   text-decoration-color: #FA5A00;
 }
 
@@ -331,25 +330,25 @@ main {
   text-decoration: underline;
   text-decoration-thickness: 0.3rem;
   text-decoration-style: wavy;
-  text-underline-offset: 1.0rem;
+  text-underline-offset: 1rem;
   text-decoration-color: #0085FF;
 }
 
 .container-column {
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem;
 }
 
 .number {
   color: white;
-  background-color: #434343;
+  background-color: #767676;
   display: inline-flex;
-  width: 3.0rem;
-  height: 3.0rem;
-  padding: 1.0rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
-  margin-right: 1.0rem !important;
-  border-radius: 10.0rem;
+  margin-right: 1rem !important;
+  border-radius: 10rem;
 }
 
 .project-image {
@@ -374,7 +373,7 @@ main {
 }
 
 .container-image {
-  margin: 6rem 0 2rem 0;
+  margin: 6rem 0 2rem;
 }
 
 .shadow-image {
@@ -427,7 +426,7 @@ footer h2 {
 }
 
 .social-icons {
-  width: 3.0rem;
+  width: 3rem;
 }
 
 /* Animation */
@@ -545,7 +544,7 @@ footer h2 {
   }
 
   #hero h1 {
-    font-size: 3.0rem;
+    font-size: 3rem;
   }
 
   #hero h1 .line-through {
@@ -579,7 +578,6 @@ footer h2 {
     padding: 4rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: flex-start;
     align-content: flex-start;
     justify-content: flex-start;
@@ -619,7 +617,6 @@ footer h2 {
   #skills.row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: flex-start;
     align-items: flex-start;
     justify-content: flex-start;
@@ -648,7 +645,7 @@ footer h2 {
   }
 
   .logo {
-    max-width: 20.0rem;
+    max-width: 20rem;
     margin: 0;
   }
 }
@@ -687,6 +684,3 @@ footer h2 {
     max-width: 80%;
   }
 }
-
-/* Media desvices (1440px or larger) */
-@media only screen and (min-width: 1440px) {}
